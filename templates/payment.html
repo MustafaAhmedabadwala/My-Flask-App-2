@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Pay Your Bills
+</title>
+<style type="text/css">
+ul { 
+     list-style-type: nonen;
+     margin:0;
+     padding: 0;
+    overflow: hidden;
+    background-color: #a7e0ee; 
+    background-image: url(static/img/Technology.jpg);}
+li {
+    display: inline-block;}
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px 36px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: red;
+}
+ul{
+	top:50%;
+	width: 100%;
+}
+.Slides{
+display: none;
+margin-top: 100px;
+margin-left: 280px; 
+width:800px;
+height: 400px; 
+}
+body{
+	overflow-x: hidden;
+}
+
+</style>
+ </head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<link href="static/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+<link href="static/css/font-awesome.css" rel="stylesheet">
+<link href="static/css/style.css" rel="stylesheet">
+<link href="static/css/pages/signin.css" rel="stylesheet" type="text/css">
+
+<body>    
+<div id="nav">
+          <ul class="nav pull-right">
+          <!--<li><a href="home.html"><b> HOME </b></a></li>
+          <li><a href="bill.html"><b>BILL SELECTION</b></a></li>
+          <li><a href="payment.html"><b>PAYMENT</b></a></li>
+          <li><a href="login.html"><b>LOGIN</b></a></li>
+          <li><a href="signup.html"><b>SIGN UP</b></a></li>
+		  <li><a href="contact.html"><b>Contact Us</b></a></li>-->
+		  
+		  <li class="">           
+            <a href="/home" class="">
+              <b>HOME</b>
+            </a>
+            
+          </li>
+          
+          <li class="">           
+            <a href="/bill" class="">
+              <b>BILL SELECTION </b>
+            </a>
+          </li>
+		  
+		  
+		  <li class="">           
+            <a href="/payment" class="">
+              <b>PAYMENT</b>
+            </a>
+          </li>
+          
+          <li class="">           
+            <a href="/login" class="">
+              <b>LOGIN</b>
+            </a>
+          </li>
+		  
+		  
+		  <li class="">           
+            <a href="/signup" class="">
+              <b>SIGN UP</b>
+            </a>
+          </li>
+		  
+		   <li class="">
+		  <a href="/fetch" class="">
+		    <b>FETCH DETAILS</b>
+			</a>
+		  </li>
+         </ul>
+</div>        
+    
+<form>
+
+<fieldset>
+    <legend>Payment information:</legend><br>
+	Type of card:<br>
+  <input type="radio" name="Card" value="Smart paisa Card" > Smart Paisa Card<br>
+  <input type="radio" name="Card" value="Credit Card" > Credit Card<br>
+  <input type="radio" name="Card" value="Debit Card"> Debit Card<br>
+
+  <br>
+	
+	Card number:<br>
+  <input type="text" name="Card number" >
+  <br><br>
+  
+  Name on Card:<br>
+  <input type="text" name="Name on Card" >
+  <br><br>
+
+  Expiry date:<br>
+
+  <input type="datetime-local" name="expirydate">
+  <br><br>
+    
+<form action="">
+CVV:<br>
+<input type="password" name="psw">
+<br><br>
+Contact number:<br>
+  <input type="text" name="Contact number" >
+  <br><br>
+
+</form>
+<style>
+body {background-color: white;}
+
+
+</style>
+
+
+
+  </datalist>
+  <input type="Submit" value="Save And Pay">
+  <input type="Reset">
+  
+  <h2><b><u> This Card will be securely for a faster payment experience.<br>
+      CVV number will not be saved.</h2></b></u>
+  
+</form>
+  </fieldset>
+  </form>
+  </body>
+  </html>

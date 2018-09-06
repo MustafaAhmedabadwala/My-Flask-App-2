@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Pay Your Bills</title>
+<style type="text/css">
+ul { 
+     list-style-type: nonen;
+     margin:0;
+     padding: 0;
+    overflow: hidden;
+    background-color: #a7e0ee; 
+    background-image: url(static/img/Technology.jpg);}
+li {
+    display: inline-block;}
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 16px 36px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: red;
+}
+ul{
+	top:50%;
+	width: 100%;
+}
+.Slides{
+display: none;
+margin-top: 100px;
+margin-left: 280px; 
+width:800px;
+height: 400px; 
+}
+body{
+	overflow-x: hidden;
+}
+
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<link href="static/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+<link href="static/css/font-awesome.css" rel="stylesheet">
+<link href="static/css/style.css" rel="stylesheet">
+<link href="static/css/pages/signin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ 
+ <div id="nav">
+          <ul class="nav left">
+		  <li class="">           
+            <a href="/home" class="">
+              <b>HOME</b>
+            </a>
+            
+          </li>
+          
+          <li class="">           
+            <a href="/bill" class="">
+              <b>BILL SELECTION </b>
+            </a>
+          </li>
+		  
+		  
+		  <li class="">           
+            <a href="/payment" class="">
+              <b>PAYMENT</b>
+            </a>
+          </li>
+          
+          <li class="">           
+            <a href="/login" class="">
+              <b>LOGIN</b>
+            </a>
+          </li>
+		  
+		  
+		  <li class="">           
+            <a href="/signup" class="">
+              <b>SIGN UP</b>
+            </a>
+          </li>
+		  
+		   <li class="">
+		  <a href="/fetch" class="">
+		    <b>FETCH DETAILS</b>
+			</a>
+		  </li>
+         </ul>
+</div>        
+<div class="account-container">
+	
+	<div class="content clearfix">
+		
+		<form action="{{ url_for('loginuser') }}" method="POST">
+		
+			<h1>Login</h1>	
+			<div class="login-fields">
+				
+				<div class="field">
+					<label for="username">Email</label>
+					<input type="text" id="email" name="email" value="" placeholder="email" class="login username-field" />
+				</div> <!-- /field -->
+				
+				<div class="field">
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" value="" placeholder="Password" class="login password-field"/>
+				</div> <!-- /password -->
+				
+			</div> <!-- /login-fields -->
+			
+			<div class="login-actions">
+									
+				<button class="button btn btn-primary btn-large">Sign In</button>
+				
+			</div> <!-- .actions -->
+		
+			
+		</form>
+		
+	</div> <!-- /content -->
+	
+</div> <!-- /account-container -->
+
+</body>
+</html>
